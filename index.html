@@ -928,23 +928,10 @@ p {
   color: white;
 }
 
-/* Image placeholder */
-.image-placeholder {
-  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
-  border: 3px dashed #ccc;
-  border-radius: 10px;
-  padding: 40px 20px;
+/* Image container for centered images */
+.image-container {
   text-align: center;
-  margin: 20px 0;
-  color: #888;
-  font-style: italic;
-}
-
-.image-placeholder::before {
-  content: "📷";
-  display: block;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin: 15px 0;
 }
 
 /* Print button */
@@ -1071,10 +1058,7 @@ p {
       
       <div class="workshop-content">
         <div>
-          <!-- INSERT YOUR EXAMPLE IMAGE HERE -->
-          <div class="image-placeholder">
-            Insert example of finished design page with Generative Fill subheadings
-          </div>
+          <img src="genfill-example-final.jpg" alt="Example of finished design page with Generative Fill subheadings" class="workshop-image" onclick="openModal(this.src)">
           <p style="text-align: center; font-style: italic; margin-top: 12px;">Example: A research page using AI-generated subheading backgrounds</p>
         </div>
         
@@ -1179,9 +1163,8 @@ p {
               <li>Resolution: <strong>300 dpi</strong></li>
               <li>Colour Mode: <strong>CMYK</strong></li>
             </ul>
-            <!-- INSERT SCREENSHOT HERE -->
-            <div class="image-placeholder">
-              Insert screenshot: New Document settings in Photoshop
+            <div class="image-container">
+              <img src="step1-new-document.png" alt="New Document settings in Photoshop" class="step-image" onclick="openModal(this.src)">
             </div>
           </div>
         </div>
@@ -1196,9 +1179,8 @@ p {
               <li>Draw a large rectangle on your canvas</li>
               <li>This will be your main content area</li>
             </ul>
-            <!-- INSERT SCREENSHOT HERE -->
-            <div class="image-placeholder">
-              Insert screenshot: Rectangle Tool selected and rectangle drawn
+            <div class="image-container">
+              <img src="step2-rectangle-tool.png" alt="Rectangle Tool selected and rectangle drawn" class="step-image" onclick="openModal(this.src)">
             </div>
           </div>
         </div>
@@ -1225,9 +1207,8 @@ p {
               <li>Or go to <span class="shortcut">Select → Load Selection</span></li>
               <li>You will see marching ants around your rectangle</li>
             </ul>
-            <!-- INSERT SCREENSHOT HERE -->
-            <div class="image-placeholder">
-              Insert screenshot: Load Selection with marching ants visible
+            <div class="image-container">
+              <img src="step4-load-selection.png" alt="Load Selection with marching ants visible" class="step-image" onclick="openModal(this.src)">
             </div>
           </div>
         </div>
@@ -1256,9 +1237,8 @@ p {
               <li>Click <strong>OK</strong> to apply</li>
             </ul>
             <p><strong>Result:</strong> Your page now has a natural, textured background.</p>
-            <!-- INSERT SCREENSHOT HERE -->
-            <div class="image-placeholder">
-              Insert screenshot: Content-Aware Fill applied to background
+            <div class="image-container">
+              <img src="step6-content-aware-fill.png" alt="Content-Aware Fill applied to background" class="step-image" onclick="openModal(this.src)">
             </div>
           </div>
         </div>
@@ -1283,9 +1263,8 @@ p {
               <li>Draw a smaller rectangle for your subheading</li>
               <li>Think about size – it needs to fit text</li>
             </ul>
-            <!-- INSERT SCREENSHOT HERE -->
-            <div class="image-placeholder">
-              Insert screenshot: Smaller rectangle for subheading
+            <div class="image-container">
+              <img src="step7-subheading-rectangle.png" alt="Smaller rectangle for subheading" class="step-image" onclick="openModal(this.src)">
             </div>
           </div>
         </div>
@@ -1300,9 +1279,8 @@ p {
               <li>Make sure it is ticked (checked)</li>
               <li>The taskbar appears near your selection</li>
             </ul>
-            <!-- INSERT SCREENSHOT HERE -->
-            <div class="image-placeholder">
-              Insert screenshot: Contextual Taskbar visible
+            <div class="image-container">
+              <img src="step8-contextual-taskbar.png" alt="Contextual Taskbar visible in Photoshop" class="step-image" onclick="openModal(this.src)">
             </div>
           </div>
         </div>
@@ -1318,9 +1296,8 @@ p {
               <li>Type your prompt (see examples below)</li>
               <li>Click <strong>Generate</strong></li>
             </ul>
-            <!-- INSERT SCREENSHOT HERE -->
-            <div class="image-placeholder">
-              Insert screenshot: Generative Fill prompt box
+            <div class="image-container">
+              <img src="step9-generative-fill-prompt.png" alt="Generative Fill prompt box" class="step-image" onclick="openModal(this.src)">
             </div>
           </div>
         </div>
@@ -1386,20 +1363,20 @@ p {
       <strong>Tip:</strong> You can use <strong>ChatGPT</strong> to help you write better prompts! Describe what you want, and ask ChatGPT to suggest prompt ideas. You can also look at your own images or artwork for inspiration.
     </div>
 
-  <div class="video-tutorial">
-  <h4 style="background: var(--inclass); color: white; padding: 12px 20px; margin: 0; font-size: 1.2rem;">Video Tutorial: Generative Fill Basics</h4>
-  <div class="video-wrapper">
-    <iframe 
-      src="https://ual.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=1a46ac14-5678-48fd-b98b-b28900a67079&autoplay=false&offerviewer=true&showtitle=false&showbrand=false&captions=false&interactivity=all" 
-      style="border: 1px solid #464646;" 
-      allowfullscreen 
-      allow="autoplay">
-    </iframe>
-  </div>
-  <div class="video-caption">
-    Watch how to use Generative Fill in Photoshop
-  </div>
-</div>
+    <div class="video-tutorial">
+      <h4 style="background: var(--inclass); color: white; padding: 12px 20px; margin: 0; font-size: 1.2rem;">Video Tutorial: Generative Fill Basics</h4>
+      <div class="video-wrapper">
+        <iframe 
+          src="https://ual.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=1a46ac14-5678-48fd-b98b-b28900a67079&autoplay=false&offerviewer=true&showtitle=false&showbrand=false&captions=false&interactivity=all" 
+          style="border: 1px solid #464646;" 
+          allowfullscreen 
+          allow="autoplay">
+        </iframe>
+      </div>
+      <div class="video-caption">
+        Watch how to use Generative Fill in Photoshop
+      </div>
+    </div>
 
     <!-- Task 1 requirements -->
     <h2>Task 1 Requirements</h2>
@@ -1613,7 +1590,7 @@ p {
       </div>
     </div>
 
-    <!-- Example gallery placeholder -->
+    <!-- Example gallery -->
     <h2>Student Examples</h2>
 
     <div class="example-section">
@@ -1621,14 +1598,14 @@ p {
       
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
         <div>
-          <div class="image-placeholder">
-            Insert student example 1
+          <div class="image-container">
+            <img src="student-example-01.jpg" alt="Student example showing effective use of subheadings" class="example-image" onclick="openModal(this.src)">
           </div>
           <p style="text-align: center; font-style: italic;">Student example showing effective use of subheadings</p>
         </div>
         <div>
-          <div class="image-placeholder">
-            Insert student example 2
+          <div class="image-container">
+            <img src="student-example-02.jpg" alt="Student example showing research integration" class="example-image" onclick="openModal(this.src)">
           </div>
           <p style="text-align: center; font-style: italic;">Student example showing research integration</p>
         </div>
@@ -1865,9 +1842,8 @@ p {
       </div>
 
       <div style="text-align: center;">
-        <!-- INSERT YOUR PADLET LINK HERE -->
         <a href="https://artslondon.padlet.org/hstokes12/groups-all-fttgy4z8y54f39fo" target="_blank" style="display: inline-block; background: var(--secondary); color: white; padding: 18px 40px; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 1.3rem; box-shadow: 0 5px 20px rgba(10, 128, 128, 0.4); transition: all 0.3s ease;">
-        Submit to Padlet Board →
+          Submit to Padlet Board →
         </a>
       </div>
     </div>
