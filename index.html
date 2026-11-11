@@ -446,19 +446,19 @@ code.prompt { font-family:'Space Mono',monospace; background:var(--ink); color:#
     <div class="step">
       <button class="step-head"><span class="step-num bg-teal">1</span>Make a new A3 document<span class="arrow">▶</span></button>
       <div class="step-body">
-        <ul><li>Go to <span class="path">File › New</span></li><li>Size: <strong>A3</strong></li><li>Direction: <strong>Landscape</strong></li><li>Resolution: <strong>300 dpi</strong></li><li>Colour: <strong>CMYK</strong></li></ul><img src="step1-new-document.png" alt="New document" class="zoom">
+        <ul><li>Go to <span class="path">File › New</span></li><li>Size: <strong>A3</strong></li><li>Direction: <strong>Landscape</strong></li><li>Resolution: <strong>300 dpi</strong></li><li>Colour: <strong>RGB</strong> (Generative Fill does not work in CMYK)</li></ul><img src="step1-new-document.png" alt="New document" class="zoom">
       </div>
     </div>
     <div class="step">
       <button class="step-head"><span class="step-num bg-teal">2</span>Draw a rectangle<span class="arrow">▶</span></button>
       <div class="step-body">
-        <ul><li>Select the <strong>Rectangle Tool</strong> <span class="key">U</span></li><li>Draw a large rectangle</li><li>This is your main content area</li></ul><img src="step2-rectangle-tool.png" alt="Rectangle tool" class="zoom">
+        <ul><li>Select the <strong>Rectangle Tool</strong> <span class="key">U</span></li><li>Draw a large rectangle on your A3 page</li><li>This is your main content area</li></ul><img src="step2-rectangle-tool.png" alt="Rectangle tool" class="zoom">
       </div>
     </div>
     <div class="step">
-      <button class="step-head"><span class="step-num bg-teal">3</span>Paste into your A3 document<span class="arrow">▶</span></button>
+      <button class="step-head"><span class="step-num bg-teal">3</span>Position the rectangle<span class="arrow">▶</span></button>
       <div class="step-body">
-        <ul><li>Copy your rectangle: <span class="key">Cmd/Ctrl</span> + <span class="key">C</span></li><li>Paste it: <span class="key">Cmd/Ctrl</span> + <span class="key">V</span></li><li>Move it where you want it</li></ul>
+        <ul><li>Use the Move Tool <span class="key">V</span></li><li>Drag the rectangle where you want it</li></ul>
       </div>
     </div>
     <div class="step">
@@ -541,7 +541,7 @@ code.prompt { font-family:'Space Mono',monospace; background:var(--ink); color:#
     <div class="stuck">
       <div class="stuck-head">🆘 Stuck? Try this</div>
       <div class="row"><div class="prob">I can’t see the Generative Fill button.</div><div class="fix">Tick <span class="path">Window › Contextual Task Bar</span>. Then make a selection (moving dots) – the button appears next to it.</div></div>
-      <div class="row"><div class="prob">Generative Fill is greyed out.</div><div class="fix">Check you are online and signed in to Adobe. If your document is CMYK, try <span class="path">Image › Mode › RGB Color</span>.</div></div>
+      <div class="row"><div class="prob">Generative Fill is greyed out.</div><div class="fix">Check you are online and signed in to Adobe. Check your document is RGB: <span class="path">Image › Mode › RGB Color</span>.</div></div>
       <div class="row"><div class="prob">Content-Aware Fill is greyed out.</div><div class="fix">You need a selection. Click a picture layer, not the shape layer – or right-click the layer › <strong>Rasterize Layer</strong>.</div></div>
       <div class="row"><div class="prob">I got a strange picture, not a texture.</div><div class="fix">Use a short prompt. Add the word <strong>texture</strong> or <strong>background</strong>. Click <strong>Generate</strong> again.</div></div>
     </div>
